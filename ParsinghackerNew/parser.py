@@ -28,8 +28,7 @@ def get_content(html):
             'Цена' : item.find('div', class_='price').get_text(strip=True),
             'Фото' : item.find('div', class_='goods-photo').find('a').find('img').get('src'),
             'Ссылка на товар' : HOST + item.find('div', class_='product-container-right-side').find('a').get('href'),
-
-    })
+     })
 # pp(l)
     return l
 

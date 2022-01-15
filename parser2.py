@@ -9,7 +9,7 @@ HEADERS = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'
 }
 
-def get_html(url, params=''):
+def get_html(URL, params=''):
     r = requests.get(URL, headers=HEADERS, params=params, verify=False)
     return r
 
